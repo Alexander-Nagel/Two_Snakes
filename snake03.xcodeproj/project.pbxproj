@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAB16F0D2560A712008387BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB16F0C2560A712008387BD /* main.cpp */; };
+		FAB16F0D2560A712008387BD /* Two_Snakes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB16F0C2560A712008387BD /* Two_Snakes.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FAB16F092560A712008387BD /* snake03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = snake03; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB16F0C2560A712008387BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FA8BA1BE2565B9EF005F2BE4 /* Neuigkeiten von Moritz.eml */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Neuigkeiten von Moritz.eml"; path = "../../../Downloads/moritz/Neuigkeiten von Moritz.eml"; sourceTree = "<group>"; };
+		FAB16F092560A712008387BD /* Two_Snakes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Two_Snakes; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB16F0C2560A712008387BD /* Two_Snakes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Two_Snakes.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +44,14 @@
 			children = (
 				FAB16F0B2560A712008387BD /* snake03 */,
 				FAB16F0A2560A712008387BD /* Products */,
+				FA8BA1BE2565B9EF005F2BE4 /* Neuigkeiten von Moritz.eml */,
 			);
 			sourceTree = "<group>";
 		};
 		FAB16F0A2560A712008387BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAB16F092560A712008387BD /* snake03 */,
+				FAB16F092560A712008387BD /* Two_Snakes */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +59,7 @@
 		FAB16F0B2560A712008387BD /* snake03 */ = {
 			isa = PBXGroup;
 			children = (
-				FAB16F0C2560A712008387BD /* main.cpp */,
+				FAB16F0C2560A712008387BD /* Two_Snakes.cpp */,
 			);
 			path = snake03;
 			sourceTree = "<group>";
@@ -79,7 +81,7 @@
 			);
 			name = snake03;
 			productName = snake03;
-			productReference = FAB16F092560A712008387BD /* snake03 */;
+			productReference = FAB16F092560A712008387BD /* Two_Snakes */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB16F0D2560A712008387BD /* main.cpp in Sources */,
+				FAB16F0D2560A712008387BD /* Two_Snakes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,18 +241,21 @@
 		FAB16F112560A712008387BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48K2Q8B3WH;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				"OTHER_LDFLAGS[arch=*]" = "-lncurses";
+				PRODUCT_NAME = Two_Snakes;
 			};
 			name = Debug;
 		};
 		FAB16F122560A712008387BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48K2Q8B3WH;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Two_Snakes;
 			};
 			name = Release;
 		};
